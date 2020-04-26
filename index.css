@@ -135,27 +135,120 @@ table {
   border-spacing: 0;
 }
 
-/* 
-    user define 
-    general setting 
-*/
+/*  user define  general setting  start */
 
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* 全域 border box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*  user define  general setting end */
+
+/* 主體 CSS */
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 body {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Microsoft JhengHei', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.headerMenu {
+  display: flex;
+  justify-content: space-between;
+  background: #aa0601 0% 0% no-repeat padding-box;
+  height: 108px;
+}
+
+.headerMenu img {
+  margin-left: 88px;
+  object-fit: none;
+}
+
+.headerMenu-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.headerMenu-list li {
+  text-align: left;
   font-size: 20px;
-  line-height: 42px;
+  line-height: 30px;
+  color: #ffffff;
+  margin-right: 64px;
 }
 
-h1 {
-  font-size: 30px;
-  margin-top: 50px;
- margin-left: 50px;
+.headerMenu-list li:last-child {
+  margin-right: 88px;
 }
 
-.orange{
-  color: orange;
+@media (max-width: 768px) {
+  .headerMenu img {
+    margin-left: 48px;
+  }
+  .headerMenu-list li:last-child {
+    margin-right: 40px;
+  }
+}
+
+.headerMain {
+  background-image: url(/IMAGES/68.png);
+  height: 840px;
+  color: #650300;
+  font-family: serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* align-items: flex-end; */
+  /* flex-wrap: nowrap; */
+  /* padding-right: 360px; */
+  /* padding-top: 350px; */
+}
+
+.headerMain h3 {
+  font-size: 36px;
+  line-height: 54px;
+  text-align: right;
+  margin-right: 360px;
+  padding-top: 350px;
+}
+
+.headerMain h1 {
+  font-size: 64px;
+  line-height: 96px;
+  text-align: right;
+  margin-right: 360px;
+}
+
+@media (max-width: 768px) {
+  .headerMain {
+    background-size: 100%;
+  }
+  .headerMain h3 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 48px;
+  }
+  .headerMain h1 {
+    font-size: 48px;
+    line-height: 72px;
+    margin-right: 48px;
+  }
 }
