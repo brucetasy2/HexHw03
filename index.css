@@ -176,6 +176,11 @@ body {
   height: 108px;
 }
 
+.headerMenu a{
+  display: none;
+  width: 0px;
+}
+
 .headerMenu img {
   margin-left: 88px;
   object-fit: none;
@@ -208,8 +213,25 @@ body {
   }
 }
 
+@media (max-width: 375px) {
+  .headerMenu img {
+    margin-left: 168px;
+  }
+
+  .headerMenu-list li{
+    display: none;
+  }
+
+  .headerMenu a{
+    display: block;
+  }
+}
+
 .headerMain {
   background-image: url(/IMAGES/68.png);
+  background-position: Center ,center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 840px;
   color: #650300;
   font-family: serif;
@@ -238,9 +260,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .headerMain {
-    background-size: 100%;
-  }
   .headerMain h3 {
     font-size: 20px;
     line-height: 30px;
@@ -250,5 +269,18 @@ body {
     font-size: 48px;
     line-height: 72px;
     margin-right: 48px;
+  }
+}
+
+@media (max-width: 375px) {
+  .headerMain h3 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 48px;
+  }
+  .headerMain h1 {
+    font-size: 32px;
+    line-height: 72px;
+    margin-right: 12px;
   }
 }
