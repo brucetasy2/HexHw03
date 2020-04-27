@@ -156,7 +156,6 @@ img {
 /*  user define  general setting end */
 
 /* 主體 CSS */
-
 .container {
   max-width: 1920px;
   margin: 0 auto;
@@ -176,9 +175,12 @@ body {
   height: 108px;
 }
 
-.headerMenu a{
-  display: none;
-  width: 0px;
+.ham-icon{
+  display: block;
+  width: 80px;
+  margin-top: 13px ;
+  margin-left: 16px;
+  
 }
 
 .headerMenu img {
@@ -222,8 +224,9 @@ body {
     display: none;
   }
 
-  .headerMenu a{
+  .ham-icon {
     display: block;
+    width: 80px;
   }
 }
 
