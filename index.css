@@ -353,7 +353,7 @@ body {
 }
 
 .card p {
-  text-align:left;
+  text-align: left;
   font-weight: bold;
   width: 208px;
   font-size: 16px;
@@ -377,10 +377,104 @@ body {
   }
 
   .card img {
-    max-width:100%;
+    max-width: 100%;
     height: auto;
     padding-top: 20px;
     margin-bottom: 16px;
   }
+}
 
+/* frames */
+.frames {
+  /* border: 1px solid red; */
+  background: #ffffff;
+}
+
+.frames h3 {
+  margin-top: 64px;
+  text-align: center;
+  color: #650300;
+  font-size: 48px;
+  line-height: 72px;
+  height: 67px;
+  margin-bottom: 60px;
+}
+
+.frame {
+  /* border:1px greenyellow solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.frame:last-child {
+  margin-bottom: 80px;
+}
+
+.modle {
+  width: 792px;
+  height: 320px;
+}
+
+.colorfully {
+  position: relative;
+  width: 792px;
+  height: 320px;
+}
+
+.colorfully::before {
+  content: '';
+  position: absolute;
+  background: url("/IMAGES/15.png");
+  background-size: contain;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.colorfully:hover::before {
+  opacity: 1;
+}
+
+.modleVSproductGap {
+  margin-right: 24px;
+}
+
+.product {
+  /* border:1px solid plum; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productIcon {
+  width: 48px;
+  height: 37px;
+  margin-right: 8px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.diamond {
+  background-image: url(/IMAGES/iconfinder_44_2529968.svg);
+}
+.sun {
+  background-image: url(/IMAGES/Layer_1.svg);
+}
+
+.flash {
+  background-image: url(/IMAGES/Page-1.svg);
+}
+
+.productTxt {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 72px;
+  font-style: italic;
+  color: #aa0601;
 }
