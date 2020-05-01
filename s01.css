@@ -1,77 +1,249 @@
 * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  
-  /* 全域 border box */
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* 全域 border box */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-.workspace{
-    max-width: 1920px;
-    margin-left: 50px;
+.workspace {
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
- img {
-    max-width: 100%;
-    height: auto;
-  }
-  
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-      'Microsoft JhengHei', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      line-height: 1.5;
-      /* font-size: 16px; */
-  }
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Microsoft JhengHei', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  /* font-size: 16px; */
+}
 
-  h1,h2,h3,h4,h5,h6 {
-    line-height: 1.2;
-    font-weight: bold;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  font-weight: bold;
+}
 
+/* navigator */
+.navigator {
+  height: 108px;
+  background-color: #aa0601;
+}
+.navigator-container {
+  display: flex;
+  justify-content: space-between;
+  height: 108px;
+}
+.hamberger-icon {
+  width: 24px;
+  background-image: url(/IMAGES/ic_menu_24px@2x.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: none;
+}
+.navi-icon {
+  width: 80px;
+  background-image: url(/IMAGES/logo-new_工作區域-1-1.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.navi-menu {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.navi-menu li {
+  font-size: 20px;
+  color: #ffffff;
+}
+.navi-icon-ml {
+  margin-left: 88px;
+}
+.navi-menu-mr {
+  margin-right: 88px;
+}
+
+@media (max-width: 768px) {
+  .navi-icon-ml {
+    margin-left: 48px;
+  }
+  .navi-menu-mr {
+    margin-right: 48px;
+  }
+}
+
+@media (max-width: 375px) {
+  .navigator {
+    height: 50px;
+  }
+  .navigator-container {
+    justify-content: flex-start;
+  }
+  .navi-icon {
+    width: 48px;
+    /* margin: 0 auto; */
+    margin-left: 124px;
+  }
+  .hamberger-icon {
+    display: inline;
+    margin-left: 16px;
+  }
+  .navi-menu {
+    display: none;
+  }
+}
+
+/* header */
+.header {
+  height: 840px;
+  background-image: url(/IMAGES/68.png);
+  background-position: center center;
+  background-size: cover;
+}
+.header-container {
+  max-width: 1224px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.header-block {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header-title {
+  text-align: right;
+}
+.header-title h1 {
+  font-size: 36px;
+}
+.header-title h2 {
+  font-size: 64px;
+}
+.header-title-color {
+  color: #650300;
+}
+
+@media (max-width: 768px) {
+  .workspace {
+    max-width: 768px;
+  }
   .header {
     height: 840px;
-    background-image: url(/IMAGES/68.png);
-    background-position: center center;
-    background-size: cover;
   }
-
   .header-container {
-    max-width: 1224px;
     margin: 0 auto;
     padding-left: 12px;
     padding-right: 12px;
   }
-
-   
-  .header-block {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  .header-title h1 {
+    font-size: 20px;
   }
-  
-  .header-title {
-      text-align: right;
+  .header-title h2 {
+    font-size: 48px;
   }
-  
-  .header-title h2{
-      font-size: 64px;
-  }
-  
-  .header-title h1{
-      font-size: 36px;
-  }
-  
-  .header-title-color{
-  color: #650300;
 }
 
+@media (max-width: 375px) {
+  .workspace {
+    max-width: 375px;
+  }
+  .header {
+    height: 394px;
+  }
+  .header-container {
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .header-title h1 {
+    font-size: 16px;
+  }
+  .header-title h2 {
+    font-size: 32px;
+  }
+}
 
+.service {
+  /* height: 544px; */
+  /* border: gold 1px dotted; */
+  background-color: #aa06010d;
+}
+.service-contaner {
+  margin: 0;
+}
 
+.service-contaner h2 {
+  font-size: 48px;
+  color: #650300;
+  text-align: center;
+}
+.service-item {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 294px;
+  text-align: center;
+  /* border: fuchsia 1px solid; */
+  align-items: center;
+}
+
+.item-img {
+  height: 100px;
+  width: 100px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+  /* border: orange 1px solid; */
+}
+.item-dollor {
+  background-image: url(/IMAGES/iconfinder_circle-dollar_430089.svg);
+}
+.item-clock {
+  background-image: url(/IMAGES/iconfinder_clock-1_430090.svg);
+}
+.item-heart {
+  background-image: url(/IMAGES/iconfinder_heart_430099.svg);
+}
+.item-glasses {
+  background-image: url(/IMAGES/iconfinder_glasses_430098.svg);
+}
+.item h3 {
+  font-size: 24px;
+  color: #650300;
+  font-weight: 900;
+  margin-bottom: 4px;
+  /* border: yellow 1px solid; */
+}
+.item p {
+  width: 210px;
+  text-align: left;
+  font-size: 16px;
+  color: #000000;
+  /* border: greenyellow 1px solid; */
+}
 
 /* 
 RWD 中的基本設定方式
@@ -87,12 +259,23 @@ RWD 中的基本設定方式
         - 內容會在更內層 
 */
 
+/* utilities */
+.h-100 {
+  height: 100%;
+}
 
-  /* utilities */
-  .h-100 {
-    height: 100%;
-  }
-  
-.mt20{
-    margin-top: 20px;
+.mt20 {
+  margin-top: 20px;
+}
+
+.mb60 {
+  margin-bottom: 60px;
+}
+
+.pl64 {
+  padding-top: 64px;
+}
+
+.mrl20 {
+  margin: 0 20px 0 20px;
 }
