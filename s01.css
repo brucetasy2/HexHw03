@@ -179,10 +179,11 @@ h6 {
   }
 }
 
+/* service */
 .service {
   /* height: 544px; */
-  /* border: gold 1px dotted; */
-  background-color: #aa06010d;
+  /* background-color: #aa06010d; */
+  background-color:gold
 }
 .service-contaner {
   margin: 0;
@@ -196,16 +197,16 @@ h6 {
 .service-item {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   padding-bottom: 80px;
 }
 
 .item {
+  width: 294px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 294px;
   text-align: center;
-  /* border: fuchsia 1px solid; */
   align-items: center;
 }
 
@@ -216,7 +217,7 @@ h6 {
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: 40px;
-  /* border: orange 1px solid; */
+
 }
 .item-dollor {
   background-image: url(/IMAGES/iconfinder_circle-dollar_430089.svg);
@@ -230,19 +231,25 @@ h6 {
 .item-glasses {
   background-image: url(/IMAGES/iconfinder_glasses_430098.svg);
 }
+
 .item h3 {
   font-size: 24px;
   color: #650300;
   font-weight: 900;
   margin-bottom: 4px;
-  /* border: yellow 1px solid; */
 }
 .item p {
   width: 210px;
   text-align: left;
   font-size: 16px;
   color: #000000;
-  /* border: greenyellow 1px solid; */
+}
+
+@media (max-width:768px)
+{
+  .service-item{
+    flex-direction: row-reverse;
+  }
 }
 
 /* 
