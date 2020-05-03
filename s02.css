@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/* 
+RWD 中的基本設定方式
+- 請把握三層 container > flex > item    
+    - container：主要限制最外圍空間使用 [Key 1]
+        - 限制最大寬
+        - 左右保留 padding
+    - flex                      [Key 2]
+        - 製作 flex 的層級
+        - 請下 flex-wrap
+    - item                      [Key 3]
+        - 寬度、margin 設定的地方
+        - 內容會在更內層 
+*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft JhengHei', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  /* font-size: 16px; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.workspace {
+  margin: 0;
+}
+
+.navigator {
+  height: 108px;
+  background-color: #aa0601;
+}
+
+.navigator .navigator-container {
+  height: 108px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigator .icon-hamberger {
+  width: 24px;
+  background-image: url(/IMAGES/ic_menu_24px@2x.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.navigator .icon-navi {
+  width: 80px;
+  background-image: url(/IMAGES/logo-new_工作區域-1-1.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.navigator .navi-mr {
+  margin-right: 80px;
+}
+
+.navigator .navi-ml {
+  margin-left: 80px;
+}
+
+.navigator .navi-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigator .navi-menu li {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .navigator {
+    margin: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .navigator {
+    margin: 0;
+  }
+  .navigator .navi-menu {
+    display: none;
+  }
+  .navigator .icon-hamberger {
+    display: block;
+    margin-left: 16px;
+  }
+  .navigator .icon-navi {
+    margin: 0 auto;
+  }
+}
+
+/* utilities */
+.h-100 {
+  height: 100%;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.ml80 {
+  margin-left: 80px;
+}
+
+.mb60 {
+  margin-bottom: 60px;
+}
+
+.pl64 {
+  padding-top: 64px;
+}
+
+.mr80 {
+  margin-right: 80px;
+}
+
+.mrl20 {
+  margin: 0 20px 0 20px;
+}
+/*# sourceMappingURL=s02.css.map */

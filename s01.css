@@ -11,7 +11,7 @@
 }
 
 .workspace {
-  max-width: 1920px;
+  /* max-width: 1920px; */
   margin: 0 auto;
 }
 
@@ -78,7 +78,7 @@ h6 {
   margin-right: 88px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .navi-icon-ml {
     margin-left: 48px;
   }
@@ -87,7 +87,7 @@ h6 {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .navigator {
     height: 50px;
   }
@@ -139,7 +139,7 @@ h6 {
   color: #650300;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .workspace {
     max-width: 768px;
   }
@@ -159,7 +159,7 @@ h6 {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .workspace {
     max-width: 375px;
   }
@@ -183,7 +183,7 @@ h6 {
 .service {
   /* height: 544px; */
   /* background-color: #aa06010d; */
-  background-color:gold
+  background-color: gold;
 }
 .service-contaner {
   margin: 0;
@@ -217,7 +217,6 @@ h6 {
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: 40px;
-
 }
 .item-dollor {
   background-image: url(/IMAGES/iconfinder_circle-dollar_430089.svg);
@@ -239,17 +238,47 @@ h6 {
   margin-bottom: 4px;
 }
 .item p {
+  font-size: 16px;
   width: 210px;
   text-align: left;
-  font-size: 16px;
   color: #000000;
 }
 
-@media (max-width:768px)
-{
-  .service-item{
-    flex-direction: row-reverse;
+@media (max-width: 768px) {
+  .pru :nth-child(2) {
+    order: 3;
   }
+  .pru :nth-child(3) {
+    order: 1;
+  }
+  .pru :nth-child(4) {
+    order: 2;
+  }
+  .pru :nth-child(5) {
+    order: 4;
+  }
+}
+
+@media (max-width: 375px) {
+  .service-contaner h2 {
+    font-size: 24px;
+  }
+  .item {
+    margin-bottom: 28px;
+  }
+  .item-img {
+    margin-bottom: 16px;
+  }
+
+  .item h3 {
+    margin-bottom: 8px;
+  }
+
+  .item p {
+    width: 224px;
+  }
+
+
 }
 
 /* 
