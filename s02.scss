@@ -200,6 +200,177 @@ h6 {
   }
 }
 
+/* service */
+.service {
+  // border: 4px rgb(38, 83, 206) dotted;
+  background-color: gray;
+}
+.service-contaner {
+  margin: 0;
+  h2 {
+    font-size: 48px;
+    color: #650300;
+    text-align: center;
+    padding-top: 64px;
+    margin-bottom: 64px;
+  }
+}
+
+.service-item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 80px;
+  // margin-bottom: 80px;
+}
+
+.item {
+  width: 282px; /*78*3+24*2*/
+  // border: khaki 3px double;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+
+  h3 {
+    font-size: 24px;
+    color: #650300;
+    font-weight: 900;
+    margin-bottom: 4px;
+  }
+
+  p {
+    font-size: 16px;
+    max-width: 208px;
+    text-align: left;
+    color: #000000;
+  }
+}
+
+.item-gap {
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.item-img {
+  height: 100px;
+  width: 100px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+}
+.item-dollor {
+  background-image: url(/IMAGES/iconfinder_circle-dollar_430089.svg);
+}
+.item-clock {
+  background-image: url(/IMAGES/iconfinder_clock-1_430090.svg);
+}
+.item-heart {
+  background-image: url(/IMAGES/iconfinder_heart_430099.svg);
+}
+.item-glasses {
+  background-image: url(/IMAGES/iconfinder_glasses_430098.svg);
+}
+
+@media (max-width: 768px) {
+  .service-contaner {
+    max-height: 900px;
+    h2 {
+      font-size: 32px;
+      padding-top: 40px;
+      margin-bottom: 32px;
+    }
+  }
+  .item {
+    width: 336px; /*78*4+24*1*/
+  }
+  .item-gap {
+    margin-right: 24px;
+    margin-bottom: 28px;
+  }
+
+  ul li:first-child {
+    order: 3;
+  }
+  ul li:nth-child(2) {
+    order: 1;
+  }
+  ul li:nth-child(3) {
+    order: 2;
+  }
+  ul li:nth-child(4) {
+    order: 4;
+  }
+}
+
+@media (max-width: 375px) {
+  .service-contaner {
+    max-height: 1091px;
+    h2 {
+      font-size: 24px;
+      padding-top: 32px;
+      margin-bottom: 32px;
+    }
+  }
+  .item {
+    width: 384px; /*78*4+24*3*/
+  }
+  .item-gap {
+    margin-right: 14px;
+  }
+}
+
+
+
+/* frames 經典系列鏡框 */
+.frames {
+  background-color:yellowgreen;
+}
+
+.frame {
+  border: 4px solid yellow;
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.frames-title h3{
+  font-size: 48px;
+  text-align: center;
+  color: #650300 ;
+  padding-top: 60px;  /*???*/
+  padding-bottom: 60px;
+}
+
+.modle{
+  max-width: 792px; /*78*8+24*7*/
+}
+
+.product {
+  border: 3px solid plum;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productIcon {
+  width: 48px;
+  height: 37px;
+  margin-right: 8px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.diamond {
+  background-image: url(/IMAGES/iconfinder_44_2529968.svg);
+}
+
+
+.XX {
+  margin-top: 800px;
+}
 /* utilities */
 .h-100 {
   height: 100%;
