@@ -356,6 +356,9 @@ h6 {
 .modle {
   max-width: 792px; /*78*8+24*7*/
   margin-right: 24px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modleReverse {
@@ -368,8 +371,7 @@ h6 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  max-width: 48.48%; /*78*4+24*3*/
-  min-width: 48%;
+  max-width: 32%; /*78*4+24*3*/
 }
 
 .productReverse {
@@ -385,18 +387,30 @@ h6 {
   background-repeat: no-repeat;
 }
 
+.diamondHide {
+  // background-image: url(/IMAGES/iconfinder_44_2529968.svg);
+  // background-repeat: no-repeat;
+
+  font-size: 20px;
+  font-weight: 900;
+  color: blueviolet;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .diamond {
   background-image: url(/IMAGES/iconfinder_44_2529968.svg);
+  background-repeat: no-repeat;
 }
+
 .sun {
   background-image: url(/IMAGES/Layer_1.svg);
 }
 .flash {
   background-image: url(/IMAGES/Page-1.svg);
 }
-.zindex{
-  z-index: 10;
-}
+
 .productTxt {
   height: 100%;
   text-align: center;
@@ -412,7 +426,6 @@ h6 {
 }
 
 @media (max-width: 768px) {
-
   .frames-title h3 {
     font-size: 32px;
     padding-top: 40px;
@@ -424,13 +437,18 @@ h6 {
   }
 
   .modle {
-    max-width: 95%; /*78*8+24*7*/
-    margin-right: 48px;
+    max-width: 53.5%; /*63*5+24*4*/
+    // margin-right: 2%;
   }
 
   .modleReverse {
     margin: 0px 48px 0px 0px;
   }
+
+  .product {
+    max-width: 30%; /*63*3+24*2*/
+  }
+
   .productReverse {
     justify-content: flex-start;
   }
@@ -441,6 +459,16 @@ h6 {
 
   .productTxt {
     font-size: 28px;
+  }
+}
+
+@media (max-width: 375px) {
+  .product {
+    display: none;
+  }
+  .modle {
+    max-width: 93.8%; 
+    justify-content: center;
   }
 }
 
