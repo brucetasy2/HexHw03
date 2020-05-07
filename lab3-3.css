@@ -1,0 +1,191 @@
+
+*, *:before, *:after{
+    box-sizing: border-box;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  
+  html, body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  .margin-b{
+    margin-bottom: 32px;
+  }
+  .h2-title{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    color: #650300;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .classic{
+    padding: 64px 0 80px 0;
+    border: firebrick 4px solid;
+  }
+
+  .classic-optical, .classic-functional{
+    border: greenyellow 2px solid;      
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .classic-sunglasses{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .classic-photo{
+    border: blueviolet 2px solid;    
+    width: 792px;
+    height: 320px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .optical-photo{
+    background-image: url(https://i.ibb.co/PTWrkhd/product-1.png);
+    margin-right: 24px;
+  }
+  .sunglasses-photo{
+    background-image: url(https://i.ibb.co/HFgyzRF/product-2.png);
+    margin-left: 24px;
+  }
+  .functional-photo{
+    background-image: url(https://i.ibb.co/9H6M8vJ/product-3.png);
+    margin-right: 24px;
+  }
+  .product-name{
+    border: pink 4px dotted;          
+    display: flex;
+  }
+  .classic-icon{
+    width: 48px;
+    margin-right: 8px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .diamond{
+    background-image: url(https://svgshare.com/i/KYc.svg);
+  }
+  .sun{
+    background-image: url(https://svgshare.com/i/KZA.svg);
+  }
+  .thunder{
+    background-image: url(https://svgshare.com/i/KX8.svg);
+  }
+  .classic-text{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 72px;
+    font-style: italic;
+    color: #AA0601;
+  }
+
+/*******************          2                   *********************/
+
+  @media(max-width: 992px){
+    .h2-title{
+      font-size: 32px;
+      line-height: 48px;
+      margin-bottom: 32px;
+    }
+    .margin-b{
+      margin-bottom: 8px;
+    }
+    .classic{
+      padding: 40px 0 40px 0;
+    }
+
+    .classic-optical, .classic-functional{
+      justify-content: flex-start;
+      margin-left: 5%;
+    }
+    .classic-sunglasses{
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-left: 5%;
+    }
+    .sunglasses-photo{
+      margin-left: 0px;
+      margin-right: 24px;
+    }
+    .classic-photo{
+      max-width: 411px;
+      max-height: 168px;
+    }
+    .product-name{
+      width: 45%;
+      justify-content: center;
+    }
+    .classic-icon{
+      max-width: 32px;
+    }
+    .classic-text{
+      font-size: 28px;
+      line-height: 42px;
+    }
+  }
+
+
+/*******************          3                   *********************/
+  @media(max-width: 768px){
+    .h2-title{
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+    .classic{
+      padding: 24px 0 24px 0;
+    }
+    
+    .classic-photo{
+      display: none;
+    }
+
+    .classic-optical{
+      background-image: url(https://i.ibb.co/PTWrkhd/product-1.png);
+    }
+    .classic-sunglasses{
+      background-image: url(https://i.ibb.co/HFgyzRF/product-2.png);
+    }
+    .classic-functional{
+      background-image: url(https://i.ibb.co/9H6M8vJ/product-3.png);
+    }
+    .classic-m{
+      height: 134px;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    .classic-optical, .classic-functional{
+      justify-content: center;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+    .classic-sunglasses{
+      justify-content: center;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+    .product-name{
+      width: 100%;
+    }
+    .classic-text{
+      color: #FFFFFF;
+    }
+    .diamond{
+      background-image: url(https://svgshare.com/i/KXf.svg);
+    }
+    .sun{
+      background-image: url(https://svgshare.com/i/KZD.svg);
+    }
+    .thunder{
+      background-image: url(https://svgshare.com/i/KYY.svg);
+    }
+  }
+  
+  
