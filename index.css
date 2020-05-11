@@ -130,7 +130,7 @@ h6 {
 /* header */
 .header {
   height: 840px;
-  background-image: url(/IMAGES/68.png);
+  background-image: url(IMAGES/68.png);
   background-position: center center;
   background-size: cover;
 }
