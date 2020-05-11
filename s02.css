@@ -18,9 +18,8 @@ img {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft JhengHei', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft JhengHei', Roboto, 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.5;
-  /* font-size: 16px; */
 }
 
 h1,
@@ -136,7 +135,7 @@ h6 {
 }
 
 .header-container {
-  border: 1px red solid;
+  /* border: 1px red solid; */
   margin: 0 auto;
   text-align: center;
 }
@@ -144,7 +143,7 @@ h6 {
 .header-block {
   max-width: 1200px;
   margin: 0 auto;
-  border: 1px orange double;
+  /* border: 1px orange double; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
