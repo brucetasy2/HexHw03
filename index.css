@@ -54,7 +54,7 @@ h6 {
 
 .icon-hamberger {
   width: 24px;
-  background-image: url(/IMAGES/ic_menu_24px@2x.png);
+  background-image: url(IMAGES/ic_menu_24px@2x.png);
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -63,7 +63,7 @@ h6 {
 
 .icon-navi {
   width: 80px;
-  background-image: url(/IMAGES/logo-new_工作區域-1-1.png);
+  background-image: url(IMAGES/logo-new_工作區域-1-1.png);
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -286,19 +286,19 @@ h6 {
 }
 
 .item-dollor {
-  background-image: url(/IMAGES/iconfinder_circle-dollar_430089.svg);
+  background-image: url(IMAGES/iconfinder_circle-dollar_430089.svg);
 }
 
 .item-clock {
-  background-image: url(/IMAGES/iconfinder_clock-1_430090.svg);
+  background-image: url(IMAGES/iconfinder_clock-1_430090.svg);
 }
 
 .item-heart {
-  background-image: url(/IMAGES/iconfinder_heart_430099.svg);
+  background-image: url(IMAGES/iconfinder_heart_430099.svg);
 }
 
 .item-glasses {
-  background-image: url(/IMAGES/iconfinder_glasses_430098.svg);
+  background-image: url(IMAGES/iconfinder_glasses_430098.svg);
 }
 
 @media (max-width: 768px) {
@@ -474,15 +474,15 @@ h6 {
 }
 
 .img-optical {
-  background-image: url("/IMAGES/8.png");
+  background-image: url("IMAGES/8.png");
 }
 
 .img-sunglasses {
-  background-image: url("/IMAGES/15.png");
+  background-image: url("IMAGES/15.png");
 }
 
 .img-functional {
-  background-image: url("/IMAGES/28.png");
+  background-image: url("IMAGES/28.png");
 }
 
 .ColorChange {
